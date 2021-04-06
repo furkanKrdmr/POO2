@@ -6,7 +6,7 @@ class Truck extends Vehicle
 {
     private int $storage;
 
-    private int $loading;
+    private int $loading = 0;
 
     private int $energyLevel;
 
@@ -17,7 +17,6 @@ class Truck extends Vehicle
         parent::__construct($color, $nbSeats);
         $this->storage = $storage;
         $this->energy = $energy;
-        $this->loading = 0;
     }
 
     public function getStorage(): string
